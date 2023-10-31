@@ -10,13 +10,9 @@ namespace Messages
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your sms");
-            string sms = Console.ReadLine();
-            Console.WriteLine("Please enter your email address");
-            string email= Console.ReadLine();
-            Console.WriteLine("Please enter your system message");
-            string system= Console.ReadLine();
-            Messages objMessage = new Messages(sms, email, system);
+            List<string> list = new List<string>();
+          
         }
+      
     }
 }
