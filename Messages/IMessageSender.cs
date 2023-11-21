@@ -23,25 +23,5 @@ namespace Messages
             message.SendMessage("Info", "body");
         }
     }
-    class SmsSender : IMessageSender
-    {
-        public void SendMessage(string mobile, string body)
-        {
-            Console.WriteLine("Mobile\n{0}\n", body);
-        }
-    }
-    class EmailSender : IMessageSender
-    {
-        public void SendMessage(string EmailAddress, string body)
-        {
-            Console.WriteLine("Email\n{0}\n", body);
-        }
-    }
-    class SystemSender : IMessageSender
-    {
-        public void SendMessage(string subject, string body)
-        {
-            Console.WriteLine("SystemMessage\n{0}\n{1}\n", subject, body);
-        }
-    }
+
 }

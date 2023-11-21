@@ -11,9 +11,11 @@ namespace Messages
         static void Main(string[] args)
         {
             IMessageSender messageSender;
-            List<string> list = new List<string>() {"09121234567","myemail@yahoo.com", "09191234567", "Test Message" };
+        
+            List<string> list = new List<string>() {"09121234567","myemail@yahoo.com", "09191234567", "test Message" };
             foreach (string s in list)
             {
+                
                 foreach(char c in s)
                 {
                     if (c >= '0' && c <= '9' && s.Length == 11)
@@ -25,6 +27,7 @@ namespace Messages
                 }
                 
             }
+            
             Console.WriteLine("strategy Method");
             MessageStrategy strategy = new MessageStrategy();
             foreach (string s in list)
