@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmailModel.cs" />
+    <Compile Include="EmployeeModel.cs" />
     <Compile Include="IMessageSender.cs" />
     <Compile Include="abstractMessage.cs" />
     <Compile Include="Program.cs" />
