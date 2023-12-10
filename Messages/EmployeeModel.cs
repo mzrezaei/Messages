@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Messages
 {
-    class EmployeeModel
+    public class EmployeeModel
     {
-        public Tuple<int, string> Info = new Tuple<int, string>(30, "Name");
+
+        public IReadOnlyList<string> Name;
+        public readonly string degree;
         
-        
+
     }
 }
